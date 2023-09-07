@@ -9,6 +9,15 @@ class ForgotPasswordPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: scaffoldBGColor,
+      body: SafeArea(
+        child: Center(
+          child: Column(
+            children: [
+              TextField(),
+            ],
+          ),
+        ),
+      ),
     );
   }
 }
