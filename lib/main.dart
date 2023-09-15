@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
         LoginPage.id: (context) => LoginPage(),
         RegisterationPage.id: (context) => const RegisterationPage(),
         ForgotPasswordPage.id: (context) => const ForgotPasswordPage(),
-        HomePage.id: (context) => HomePage(),
+        HomePage.id: (context) => const HomePage(),
       },
     );
   }

@@ -1,7 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebaseui/constants/colors.dart';
 import 'package:firebaseui/screens/forgot_password.dart';
-import 'package:firebaseui/screens/home.dart';
 import 'package:firebaseui/screens/registeration.dart';
 import 'package:flutter/material.dart';
 
