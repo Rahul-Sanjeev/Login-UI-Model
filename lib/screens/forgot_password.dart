@@ -1,4 +1,5 @@
 import 'package:firebaseui/constants/colors.dart';
+import 'package:firebaseui/screens/login.dart';
 import 'package:flutter/material.dart';
 
 class ForgotPasswordPage extends StatelessWidget {
@@ -12,8 +13,25 @@ class ForgotPasswordPage extends StatelessWidget {
       body: SafeArea(
         child: Center(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              TextField(),
+              Text('Forgot password'),
+              ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: buttonColor,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                ),
+                onPressed: () {
+                  // navigate back to login screen;
+                  Navigator.pushNamed(context, LoginPage.id);
+                },
+                child: Text(
+                  'Back',
+                  style: TextStyle(color: Colors.white),
+                ),
+              )
             ],
           ),
         ),

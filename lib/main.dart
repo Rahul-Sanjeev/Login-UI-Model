@@ -1,12 +1,13 @@
 import 'package:firebaseui/screens/Login.dart';
 import 'package:firebaseui/screens/forgot_password.dart';
+import 'package:firebaseui/screens/home.dart';
 import 'package:firebaseui/screens/registeration.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 
-void main() {
-  // WidgetsFlutterBinding.ensureInitialized();
-  // await Firebase.initializeApp();
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
 
   runApp(const MyApp());
 }
@@ -25,9 +26,10 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: LoginPage.id,
       routes: {
-        LoginPage.id: (context) => const LoginPage(),
+        LoginPage.id: (context) => LoginPage(),
         RegisterationPage.id: (context) => const RegisterationPage(),
         ForgotPasswordPage.id: (context) => const ForgotPasswordPage(),
+        HomePage.id: (context) => HomePage(),
       },
     );
   }
